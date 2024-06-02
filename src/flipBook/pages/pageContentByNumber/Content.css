@@ -1,0 +1,17 @@
+.Content {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 20px;
+}
+
+.Title {
+  text-align: center;
+  padding-bottom: 25px;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.Image {
+  object-fit: contain;
+}

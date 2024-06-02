@@ -1,16 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 import './index.css';
 import './normalize.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ErrorPage from './ErrorPage';
+import FlipBook from './flipBook/FlipBook';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/flipbook',
+    element: <FlipBook />
+  }
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

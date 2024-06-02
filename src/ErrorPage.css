@@ -1,0 +1,17 @@
+.ErrorTitle {
+  text-align: left;
+  font-size: 25px;
+  padding: 30px;
+}
+
+.ErrorContent {
+  text-align: left;
+  font-size: 15px;
+  padding: 10px 30px;
+}
+
+.ErrorLink {
+  text-align: left;
+  font-size: 15px;
+  padding: 10px 30px;
+}
