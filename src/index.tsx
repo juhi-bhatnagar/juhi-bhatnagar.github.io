@@ -1,36 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,
-  RouterProvider,
+  HashRouter,
+  Routes,
+  Route
 } from 'react-router-dom';
 import './index.css';
 import './normalize.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ErrorPage from './ErrorPage';
-import FlipBook from './flipBook/FlipBook';
+import FlipBook from './projectDetails/projects/flipBook/FlipBook';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: '/flipbook',
-    element: <FlipBook />
-  }
-]);
-
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <HashRouter>
+    <React.StrictMode>
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route path='/flipBook' element={<FlipBook />} />
+      </Routes>
+    </React.StrictMode>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

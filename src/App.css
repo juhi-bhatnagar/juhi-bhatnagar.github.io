@@ -1,3 +1,85 @@
+.MenuBar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 100%;
+  height: 40px;
+  gap: 35px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1px 1px #fff;
+}
+
+.Nav {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+}
+
 .AppRoot {
+  display: flex;
+  flex-direction: column;
   text-align: left;
+  padding: 0 80px;
+  gap: 80px;
+  background-image: linear-gradient(#a8dee0, #c09adb);
+}
+
+.Section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.Top {
+  margin-top: 50px;
+}
+
+.AppName {
+  text-align: left;
+  font-size: 30px;
+}
+
+.AppTitle {
+  text-align: left;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.AppContent {
+  text-align: left;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.Link {
+  color: #000;
+}
+
+.ProjectsList {
+  display: grid;
+  gap: 40px;
+}
+
+.SocialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.Image {
+  height: 40px;
+}
+
+.LinkedIn {
+  border-radius: 10px;
+}
+
+.GitHub {
+  border-radius: 10px;
 }
