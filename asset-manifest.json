@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.87170913.css",
+    "main.js": "/static/js/main.42b10854.js",
+    "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
+    "static/media/Yugen.png": "/static/media/Yugen.ab13d65a2e583f5885e7.png",
+    "static/media/BellaSunning.jpg": "/static/media/BellaSunning.c0d7c2abde6a76fd7d32.jpg",
+    "static/media/BellaChair.jpg": "/static/media/BellaChair.0a4ffbea1faceeb6d2cc.jpg",
+    "static/media/BellaNapping.jpg": "/static/media/BellaNapping.aad976d3bf1f791e65a3.jpg",
+    "static/media/Hestia.png": "/static/media/Hestia.83ac16f76c2dc9b88278.png",
+    "static/media/BellaShy.jpg": "/static/media/BellaShy.4ffe509c2ce48a63c272.jpg",
+    "static/media/BellaHiding.jpg": "/static/media/BellaHiding.75f1244d7595654a1c7a.jpg",
+    "static/media/BellaWorking.jpeg": "/static/media/BellaWorking.b21382051f9839eb4f30.jpeg",
+    "static/media/BellaSleeping.jpeg": "/static/media/BellaSleeping.0d5c4df279591d5654eb.jpeg",
+    "static/media/BellaYawning.jpg": "/static/media/BellaYawning.bb3ccd037af378fec3ec.jpg",
+    "static/media/WoodTexture.jpg": "/static/media/WoodTexture.f07243bab5c97c39b19c.jpg",
+    "static/media/Email.svg": "/static/media/Email.0a3c28c8186dde3d1b0781b19c4a3ed7.svg",
+    "index.html": "/index.html",
+    "main.87170913.css.map": "/static/css/main.87170913.css.map",
+    "main.42b10854.js.map": "/static/js/main.42b10854.js.map",
+    "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87170913.css",
+    "static/js/main.42b10854.js"
+  ]
+}
