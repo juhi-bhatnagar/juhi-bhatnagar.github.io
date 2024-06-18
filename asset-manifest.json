@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8af1f750.css",
-    "main.js": "/static/js/main.3340a9a4.js",
+    "main.css": "/static/css/main.a2391afb.css",
+    "main.js": "/static/js/main.57095edb.js",
     "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
     "static/media/Yugen.png": "/static/media/Yugen.ab13d65a2e583f5885e7.png",
     "static/media/BellaSunning.jpg": "/static/media/BellaSunning.c0d7c2abde6a76fd7d32.jpg",
@@ -13,15 +13,18 @@
     "static/media/BellaWorking.jpeg": "/static/media/BellaWorking.b21382051f9839eb4f30.jpeg",
     "static/media/BellaSleeping.jpeg": "/static/media/BellaSleeping.0d5c4df279591d5654eb.jpeg",
     "static/media/BellaYawning.jpg": "/static/media/BellaYawning.bb3ccd037af378fec3ec.jpg",
+    "static/media/OneDrive.png": "/static/media/OneDrive.e69418e98e0b42bcf85c.png",
+    "static/media/Killfie.png": "/static/media/Killfie.16a778bc7f8ba2a0b23d.png",
+    "static/media/VoteBox.png": "/static/media/VoteBox.025e2905610d1045ae32.png",
     "static/media/WoodTexture.jpg": "/static/media/WoodTexture.f07243bab5c97c39b19c.jpg",
     "static/media/Email.svg": "/static/media/Email.0a3c28c8186dde3d1b0781b19c4a3ed7.svg",
     "index.html": "/index.html",
-    "main.8af1f750.css.map": "/static/css/main.8af1f750.css.map",
-    "main.3340a9a4.js.map": "/static/js/main.3340a9a4.js.map",
+    "main.a2391afb.css.map": "/static/css/main.a2391afb.css.map",
+    "main.57095edb.js.map": "/static/js/main.57095edb.js.map",
     "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8af1f750.css",
-    "static/js/main.3340a9a4.js"
+    "static/css/main.a2391afb.css",
+    "static/js/main.57095edb.js"
   ]
 }
