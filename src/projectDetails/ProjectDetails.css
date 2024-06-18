@@ -1,14 +1,20 @@
 .Project {
-  height: 400px;
   padding: 30px;
   display: flex;
   flex-direction: column;
+  max-width: 650px;
   gap: 25px;
+  box-shadow: 2px 2px 10px #de4848;
+  background-color: #fce6d3;
+  border-radius: 10px;
+  color: #26737a;
 }
 
 .ProjectCover {
   max-height: 100%;
   max-width: 100%;
+  box-shadow: 2px 2px 10px #7e6c53;
+  border-radius: 10px;
 }
 
 .ProjectTitle {
@@ -23,6 +29,6 @@
 }
 
 .ProjectLink {
-  color: #000;
   font-weight: 500;
+  color: #26737a;
 }

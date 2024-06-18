@@ -6,16 +6,28 @@
   align-items: center;
   font-size: 18px;
   width: 100%;
-  height: 40px;
+  height: 50px;
   gap: 35px;
+  background-color: #fad9d5;
   backdrop-filter: blur(5px);
-  box-shadow: 0 1px 1px #fff;
+}
+
+.Scroll {
+  background-color: #fce6d3;
+  box-shadow: 0 1px 5px #fce6d3;
 }
 
 .Nav {
   background-color: transparent;
   border: none;
+  font-size: 20px;
   font-weight: 600;
+  color: #692705;
+}
+
+.Nav:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .AppRoot {
@@ -24,7 +36,8 @@
   text-align: left;
   padding: 0 80px;
   gap: 80px;
-  background-image: linear-gradient(#a8dee0, #c09adb);
+  background-image: linear-gradient(#fad9d5, #fbb7c7);
+  color: #692705;
 }
 
 .Section {
@@ -52,15 +65,18 @@
   text-align: left;
   font-size: 18px;
   margin: 5px 0;
+  color: #b43202;
 }
 
 .Link {
-  color: #000;
+  color: #b43202;
 }
 
 .ProjectsList {
-  display: grid;
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .SocialMedia {

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import ProjectDetails from './projectDetails/ProjectDetails';
 import email from './images/Email.svg';
 // from https://www.flaticon.com/free-icon/linkedin-logo_61109
@@ -11,6 +11,7 @@ function App(): JSX.Element {
   const projectsRef = useRef<HTMLDivElement>(null);
   const selfRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  const menuBarRef = useRef<HTMLDivElement>(null);
   
   const onClickToScroll = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({
@@ -18,9 +19,26 @@ function App(): JSX.Element {
     });
   }
 
+  useEffect(() => {
+    const listener = () => {
+      const menuBar = menuBarRef.current;
+      if(menuBar) {
+        if(!window.scrollY) {
+          menuBar.className = 'MenuBar';
+          return;
+        }
+        menuBar.className = 'MenuBar Scroll';
+      }
+    };
+    document.addEventListener('scroll', listener);
+  return () => {
+    document.removeEventListener('scroll', listener);
+  };
+}, [menuBarRef]);
+
   return (
     <>
-      <header className='MenuBar'>
+      <header className='MenuBar' id='MenuBar' ref={menuBarRef}>
         <button className='Nav' onClick={() => {onClickToScroll(selfRef)}}>About</button>
         <button className='Nav' onClick={() => {onClickToScroll(projectsRef)}}>Projects</button>
         <button className='Nav' onClick={() => {onClickToScroll(contactRef)}}>Contact me</button>
@@ -33,7 +51,7 @@ function App(): JSX.Element {
             I am a software engineer at Microsoft, skilled in web development and project management.
             <b> I am passionate about transforming complexity into intuitive products.</b>
             <br />
-            I am also passionate about DEI in the workplace and everyday life.
+            I am also passionate about DEI in the workplace and in everyday life.
             <br /> 
             I have a Master of Computer Science, with an HCI specialization, from Rice University.
             <br />
@@ -56,13 +74,13 @@ function App(): JSX.Element {
 
         <div className='Section' id='Contact' ref={contactRef}>
           <div className='SocialMedia'>
-            <a href='mailto:juhi.bhatnagar95@gmail.com' target='_blank' rel='noreferrer'>
+            <a href='mailto:juhi.bhatnagar95@gmail.com' target='_blank' rel='noreferrer' title='Email'>
               <img className='Email Image' src={email} alt='Envelope icon' />
             </a>
-            <a href='https://www.linkedin.com/in/juhi-bhatnagar' target='_blank' rel='noreferrer'>
+            <a href='https://www.linkedin.com/in/juhi-bhatnagar' target='_blank' rel='noreferrer' title='LinkedIn profile'>
               <img className='LinkedIn Image' src={linkedIn} alt='LinkedIn logo' />
             </a>
-            <a href='https://github.com/juhi-bhatnagar/juhi-bhatnagar.github.io' target='_blank' rel='noreferrer'>
+            <a href='https://github.com/juhi-bhatnagar/juhi-bhatnagar.github.io' target='_blank' rel='noreferrer' title='GitHub profile'>
               <img className='GitHub Image' src={gitHub} alt='GitHub logo' />
             </a>
           </div>
